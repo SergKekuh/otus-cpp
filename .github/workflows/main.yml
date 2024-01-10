@@ -1,4 +1,4 @@
-name: 'C++ CI'
+name: 'C++ CI2'
 
 on:
   push:
@@ -8,8 +8,7 @@ on:
       - feature/github_actions
 
 jobs:
-  build-node:
-    name: Create Release
+  build:   
     runs-on: ubuntu-latest
     container: node:16
     steps:
