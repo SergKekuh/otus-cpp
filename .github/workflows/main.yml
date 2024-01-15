@@ -1,4 +1,4 @@
-name: 'C++ CI'
+name: 'C++ CI2'
 
 on:
   push:
@@ -8,12 +8,12 @@ on:
       - feature/github_actions
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:   
+    runs-on: ubuntu-latest    
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules: true       
       - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
