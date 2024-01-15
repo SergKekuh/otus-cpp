@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0"
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0"
 		},
 		{
 			"name" : "Boost_INCLUDE_DIR",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "27"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "8"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -198,7 +198,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -326,7 +326,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/cc"
 		},
 		{
@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.27"
+			"value" : "/usr/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.74.0()]"
+			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.83.0()]"
 		},
 		{
 			"name" : "PATCH_VERSION",
@@ -1395,7 +1395,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0"
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.83.0"
 		},
 		{
 			"name" : "boost_unit_test_framework_DIR",
@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_unit_test_framework-1.74.0"
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_unit_test_framework-1.83.0"
 		},
 		{
 			"name" : "helloworld_BINARY_DIR",

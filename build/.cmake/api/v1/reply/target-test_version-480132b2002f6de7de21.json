@@ -84,16 +84,16 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
-					"define" : "BOOST_ALL_NO_LIB"
-				},
-				{
 					"backtrace" : 4,
 					"define" : "BOOST_TEST_DYN_LINK"
 				},
 				{
 					"backtrace" : 2,
 					"define" : "BOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_UNIT_TEST_FRAMEWORK_NO_LIB"
 				}
 			],
 			"language" : "CXX",
@@ -129,7 +129,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so.1.74.0",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so.1.83.0",
 				"role" : "libraries"
 			},
 			{
