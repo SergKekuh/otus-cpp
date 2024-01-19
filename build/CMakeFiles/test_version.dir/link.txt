@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_version.dir/test_version.cpp.o CMakeFiles/test_version.dir/main.cpp.o -o test_version  /usr/lib/x86_64-linux-gnu/libgtest.a /usr/lib/x86_64-linux-gnu/libgtest_main.a libhelloworld.a /usr/lib/x86_64-linux-gnu/libgtest.a 
