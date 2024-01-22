@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/serg/Documents/otus-cpp/main.cpp" "CMakeFiles/test_version.dir/main.cpp.o" "gcc" "CMakeFiles/test_version.dir/main.cpp.o.d"
   "/home/serg/Documents/otus-cpp/test_version.cpp" "CMakeFiles/test_version.dir/test_version.cpp.o" "gcc" "CMakeFiles/test_version.dir/test_version.cpp.o.d"
   )
 

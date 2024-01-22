@@ -11,10 +11,13 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/asm-generic/posix_types.h \
   /usr/include/asm-generic/types.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/any \
+  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -33,6 +36,7 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
@@ -40,6 +44,8 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -51,10 +57,12 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/bits/locale_facets_nonio.h \
   /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -71,10 +79,12 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -92,10 +102,14 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
+  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -103,6 +117,7 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/ciso646 \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/compare \
   /usr/include/c++/13/condition_variable \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
@@ -135,7 +150,11 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
@@ -143,11 +162,14 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
+  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
   /usr/include/c++/13/utility \
+  /usr/include/c++/13/variant \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -346,8 +368,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/local/include/gtest/internal/custom/gtest-port.h:
 
-/usr/local/include/gtest/gtest/internal/gtest-port.h:
-
 /usr/local/include/gtest/gtest/gtest_prod.h:
 
 /usr/local/include/gtest/gtest/gtest_pred_impl.h:
@@ -374,8 +394,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/local/include/gtest/gtest-matchers.h:
 
-/usr/local/include/gtest/gtest-assertion-result.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
@@ -390,8 +408,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -403,8 +419,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
@@ -438,19 +452,29 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
-/usr/include/c++/13/istream:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/13/initializer_list:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/c++/13/functional:
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
-/usr/include/c++/13/iostream:
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
-/usr/include/c++/13/ext/type_traits.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/usr/include/c++/13/ext/string_conversions.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/13/ext/concurrence.h:
+/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/13/debug/assertions.h:
 
@@ -460,9 +484,11 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/cstdio:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/c++/13/clocale:
 
@@ -482,9 +508,13 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/c++/13/bits/vector.tcc:
+/usr/include/c++/13/variant:
 
 /usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
 
 /usr/local/include/gtest/internal/gtest-type-util.h:
 
@@ -496,31 +526,37 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
+/usr/include/c++/13/bits/unordered_map.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/13/bits/stl_map.h:
+
 /usr/include/c++/13/locale:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
 /usr/include/c++/13/bits/stl_relops.h:
 
 /usr/include/c++/13/bits/stream_iterator.h:
 
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+/usr/local/include/gtest/gtest/internal/gtest-port.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/asm-generic/errno.h:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -528,11 +564,9 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/c++/13/bits/allocator.h:
-
 /usr/include/c++/13/bits/stl_algobase.h:
 
-/usr/include/c++/13/exception:
+/usr/include/c++/13/cstddef:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -546,13 +580,13 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/erase_if.h:
 
+/usr/include/c++/13/bits/stringfwd.h:
+
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/map:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -562,37 +596,25 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/range_access.h:
 
+/usr/include/c++/13/compare:
+
 /usr/include/c++/13/system_error:
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
+/usr/include/c++/13/bits/string_view.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/c++/13/bits/std_abs.h:
 
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
+/usr/include/c++/13/bits/parse_numbers.h:
 
-/usr/include/c++/13/set:
+/usr/include/c++/13/bits/stl_set.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/home/serg/Documents/otus-cpp/lib.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
@@ -604,49 +626,25 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/libintl.h:
 
-/usr/include/c++/13/bits/chrono.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
 /usr/include/c++/13/atomic:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
-/usr/local/include/gtest/gtest/gtest-matchers.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
 /usr/include/c++/13/backward/binders.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/c++/13/new:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/c++/13/ios:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/13/bits/node_handle.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -664,39 +662,79 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/c++/13/ext/aligned_buffer.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/locale.h:
+/usr/include/c++/13/pstl/execution_defs.h:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+/usr/include/linux/stddef.h:
 
-/usr/include/c++/13/bits/utility.h:
+/home/serg/Documents/otus-cpp/lib.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/optional:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/alloca.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/any:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/assert.h:
+
+/usr/local/include/gtest/gtest/gtest-matchers.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/set:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/home/serg/Documents/otus-cpp/main.cpp:
 
 /usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/c++/13/bits/locale_conv.h:
 
 /usr/include/c++/13/cxxabi.h:
-
-/home/serg/Documents/otus-cpp/main.cpp:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/13/cwchar:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -710,9 +748,21 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/assert.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/13/backward/auto_ptr.h:
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/local/include/gtest/gtest-assertion-result.h:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -729,8 +779,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/cstddef:
 
 /usr/include/c++/13/bits/localefwd.h:
 
@@ -750,8 +798,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/c++/13/streambuf:
-
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
@@ -760,33 +806,73 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/linux/stddef.h:
+/usr/include/c++/13/array:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/c++/13/bits/ostream.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/stl_set.h:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/c++/13/utility:
 
-/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/new:
+
+/usr/include/c++/13/ext/concurrence.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/ext/string_conversions.h:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/c++/13/functional:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/c++/13/ios:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/c++/13/istream:
 
 /usr/include/c++/13/bits/ios_base.h:
 
@@ -802,11 +888,17 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/c++/13/exception:
 
-/usr/include/c++/13/bits/stl_map.h:
+/usr/include/c++/13/pstl/glue_memory_defs.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13/sstream:
 
 /usr/include/c++/13/stdexcept:
 
@@ -816,21 +908,27 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/c++/13/string:
 
+/usr/include/c++/13/map:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/features-time64.h:
+
 /usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/c++/13/tuple:
 
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
 /usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/c++/13/unordered_map:
 
 /usr/include/c++/13/vector:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
 
 /usr/include/ctype.h:
-
-/usr/include/features-time64.h:
 
 /usr/include/features.h:
 
@@ -856,6 +954,10 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/sched.h:
 
+/usr/include/strings.h:
+
+/usr/include/signal.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/endian.h:
@@ -870,12 +972,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 
 /usr/include/string.h:
 
-/usr/include/signal.h:
-
-/usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/unistd.h:
@@ -885,10 +981,6 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/wchar.h:
 
 /usr/include/c++/13/cwctype:
 
@@ -963,29 +1055,3 @@ CMakeFiles/helloworld_cli.dir/main.cpp.o: /home/serg/Documents/otus-cpp/main.cpp
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/13/sstream:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:

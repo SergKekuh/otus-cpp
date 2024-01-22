@@ -260,6 +260,9 @@ helloworld_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 helloworld_SOURCE_DIR:STATIC=/home/serg/Documents/otus-cpp
 
+//Build all tests.
+test:BOOL=OFF
+
 
 ########################
 # INTERNAL cache entries
