@@ -65,26 +65,6 @@ CMAKE_BINARY_DIR = /home/serg/Documents/otus-cpp/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	/usr/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/serg/Documents/otus-cpp/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -182,30 +162,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named helloworld_cli
+# Target rules for targets named hellow_Lib
 
 # Build rule for target.
-helloworld_cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld_cli
-.PHONY : helloworld_cli
+hellow_Lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hellow_Lib
+.PHONY : hellow_Lib
 
 # fast build rule for target.
-helloworld_cli/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/build
-.PHONY : helloworld_cli/fast
+hellow_Lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/build
+.PHONY : hellow_Lib/fast
 
 #=============================================================================
-# Target rules for targets named helloworld
+# Target rules for targets named hellow_App
 
 # Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
+hellow_App: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hellow_App
+.PHONY : hellow_App
 
 # fast build rule for target.
-helloworld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+hellow_App/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/build
+.PHONY : hellow_App/fast
 
 #=============================================================================
 # Target rules for targets named test_version
@@ -220,12 +200,64 @@ test_version/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/build
 .PHONY : test_version/fast
 
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 lib.o: lib.cpp.o
 .PHONY : lib.o
 
 # target to build an object file
 lib.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/lib.cpp.o
 .PHONY : lib.cpp.o
 
 lib.i: lib.cpp.i
@@ -233,7 +265,7 @@ lib.i: lib.cpp.i
 
 # target to preprocess a source file
 lib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/lib.cpp.i
 .PHONY : lib.cpp.i
 
 lib.s: lib.cpp.s
@@ -241,7 +273,7 @@ lib.s: lib.cpp.s
 
 # target to generate assembly for a file
 lib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/lib.cpp.s
 .PHONY : lib.cpp.s
 
 main.o: main.cpp.o
@@ -249,7 +281,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -257,7 +289,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -265,7 +297,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test_version.o: test_version.cpp.o
@@ -303,11 +335,13 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... package"
-	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... helloworld"
-	@echo "... helloworld_cli"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... hellow_App"
+	@echo "... hellow_Lib"
 	@echo "... test_version"
 	@echo "... lib.o"
 	@echo "... lib.i"

@@ -63,86 +63,143 @@ CMAKE_BINARY_DIR = /home/serg/Documents/otus-cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/helloworld_cli.dir/all
-all: CMakeFiles/helloworld.dir/all
+all: CMakeFiles/hellow_Lib.dir/all
+all: CMakeFiles/hellow_App.dir/all
 all: CMakeFiles/test_version.dir/all
+all: build/_deps/googletest-src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: build/_deps/googletest-src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/helloworld_cli.dir/clean
-clean: CMakeFiles/helloworld.dir/clean
+clean: CMakeFiles/hellow_Lib.dir/clean
+clean: CMakeFiles/hellow_App.dir/clean
 clean: CMakeFiles/test_version.dir/clean
+clean: build/_deps/googletest-src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/helloworld_cli.dir
+# Directory level rules for directory build/_deps/googletest-src
 
-# All Build rule for target.
-CMakeFiles/helloworld_cli.dir/all: CMakeFiles/helloworld.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=3,4 "Built target helloworld_cli"
-.PHONY : CMakeFiles/helloworld_cli.dir/all
+# Recursive "all" directory target.
+build/_deps/googletest-src/all: build/_deps/googletest-src/googlemock/all
+.PHONY : build/_deps/googletest-src/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/helloworld_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloworld_cli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld_cli.dir/rule
+# Recursive "preinstall" directory target.
+build/_deps/googletest-src/preinstall: build/_deps/googletest-src/googlemock/preinstall
+.PHONY : build/_deps/googletest-src/preinstall
 
-# Convenience name for target.
-helloworld_cli: CMakeFiles/helloworld_cli.dir/rule
-.PHONY : helloworld_cli
-
-# clean rule for target.
-CMakeFiles/helloworld_cli.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/clean
-.PHONY : CMakeFiles/helloworld_cli.dir/clean
+# Recursive "clean" directory target.
+build/_deps/googletest-src/clean: build/_deps/googletest-src/googlemock/clean
+.PHONY : build/_deps/googletest-src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/helloworld.dir
+# Directory level rules for directory build/_deps/googletest-src/googlemock
+
+# Recursive "all" directory target.
+build/_deps/googletest-src/googlemock/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+build/_deps/googletest-src/googlemock/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
+build/_deps/googletest-src/googlemock/all: build/_deps/googletest-src/googletest/all
+.PHONY : build/_deps/googletest-src/googlemock/all
+
+# Recursive "preinstall" directory target.
+build/_deps/googletest-src/googlemock/preinstall: build/_deps/googletest-src/googletest/preinstall
+.PHONY : build/_deps/googletest-src/googlemock/preinstall
+
+# Recursive "clean" directory target.
+build/_deps/googletest-src/googlemock/clean: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/clean
+build/_deps/googletest-src/googlemock/clean: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/clean
+build/_deps/googletest-src/googlemock/clean: build/_deps/googletest-src/googletest/clean
+.PHONY : build/_deps/googletest-src/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory build/_deps/googletest-src/googletest
+
+# Recursive "all" directory target.
+build/_deps/googletest-src/googletest/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+build/_deps/googletest-src/googletest/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : build/_deps/googletest-src/googletest/all
+
+# Recursive "preinstall" directory target.
+build/_deps/googletest-src/googletest/preinstall:
+.PHONY : build/_deps/googletest-src/googletest/preinstall
+
+# Recursive "clean" directory target.
+build/_deps/googletest-src/googletest/clean: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/clean
+build/_deps/googletest-src/googletest/clean: build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : build/_deps/googletest-src/googletest/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hellow_Lib.dir
 
 # All Build rule for target.
-CMakeFiles/helloworld.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=1,2 "Built target helloworld"
-.PHONY : CMakeFiles/helloworld.dir/all
+CMakeFiles/hellow_Lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=11,12 "Built target hellow_Lib"
+.PHONY : CMakeFiles/hellow_Lib.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/helloworld.dir/rule: cmake_check_build_system
+CMakeFiles/hellow_Lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloworld.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hellow_Lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld.dir/rule
+.PHONY : CMakeFiles/hellow_Lib.dir/rule
 
 # Convenience name for target.
-helloworld: CMakeFiles/helloworld.dir/rule
-.PHONY : helloworld
+hellow_Lib: CMakeFiles/hellow_Lib.dir/rule
+.PHONY : hellow_Lib
 
 # clean rule for target.
-CMakeFiles/helloworld.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/clean
-.PHONY : CMakeFiles/helloworld.dir/clean
+CMakeFiles/hellow_Lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_Lib.dir/build.make CMakeFiles/hellow_Lib.dir/clean
+.PHONY : CMakeFiles/hellow_Lib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hellow_App.dir
+
+# All Build rule for target.
+CMakeFiles/hellow_App.dir/all: CMakeFiles/hellow_Lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=9,10 "Built target hellow_App"
+.PHONY : CMakeFiles/hellow_App.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hellow_App.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hellow_App.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/hellow_App.dir/rule
+
+# Convenience name for target.
+hellow_App: CMakeFiles/hellow_App.dir/rule
+.PHONY : hellow_App
+
+# clean rule for target.
+CMakeFiles/hellow_App.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hellow_App.dir/build.make CMakeFiles/hellow_App.dir/clean
+.PHONY : CMakeFiles/hellow_App.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_version.dir
 
 # All Build rule for target.
-CMakeFiles/test_version.dir/all:
+CMakeFiles/test_version.dir/all: CMakeFiles/hellow_Lib.dir/all
+CMakeFiles/test_version.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/test_version.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
+CMakeFiles/test_version.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_version.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=5,6 "Built target test_version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=13,14 "Built target test_version"
 .PHONY : CMakeFiles/test_version.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_version.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_version.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_version.dir/rule
@@ -155,6 +212,111 @@ test_version: CMakeFiles/test_version.dir/rule
 CMakeFiles/test_version.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/clean
 .PHONY : CMakeFiles/test_version.dir/clean
+
+#=============================================================================
+# Target rules for target build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# clean rule for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# clean rule for target.
+build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/build.make build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# clean rule for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/serg/Documents/otus-cpp/build/CMakeFiles 0
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# clean rule for target.
+build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

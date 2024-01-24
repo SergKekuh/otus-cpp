@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /home/serg/Documents/otus-cpp/build/_deps/googletest-src/googletest/include -isystem /home/serg/Documents/otus-cpp/build/_deps/googletest-src/googletest -isystem /home/serg/Documents/otus-cpp/build/_deps/googletest-src/googlemock/include -isystem /home/serg/Documents/otus-cpp/build/_deps/googletest-src/googlemock
 
-CXX_FLAGS = -g -Wall
+CXX_FLAGS = 
 

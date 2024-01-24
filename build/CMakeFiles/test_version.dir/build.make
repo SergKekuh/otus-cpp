@@ -92,6 +92,11 @@ test_version_EXTERNAL_OBJECTS =
 
 test_version: CMakeFiles/test_version.dir/test_version.cpp.o
 test_version: CMakeFiles/test_version.dir/build.make
+test_version: libhellow_Lib.a
+test_version: lib/libgtest_main.a
+test_version: lib/libgmock_main.a
+test_version: lib/libgmock.a
+test_version: lib/libgtest.a
 test_version: CMakeFiles/test_version.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/serg/Documents/otus-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_version"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_version.dir/link.txt --verbose=$(VERBOSE)
