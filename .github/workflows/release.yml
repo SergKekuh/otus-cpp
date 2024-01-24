@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - workflow_dispatch
-      - master
+      - googletest-branch
       - feature/github_actions
 
 jobs:
