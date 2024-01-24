@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 33,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 34,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
@@ -43,7 +43,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 105,
+				"line" : 101,
 				"parent" : 3
 			},
 			{
@@ -52,13 +52,13 @@
 			{
 				"command" : 1,
 				"file" : 2,
-				"line" : 146,
+				"line" : 145,
 				"parent" : 5
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 64,
+				"line" : 67,
 				"parent" : 0
 			}
 		]
@@ -130,6 +130,10 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "hellow_Lib::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "gmock::@eedd0be5a0d53e750fb6"
 		},
 		{
@@ -143,10 +147,6 @@
 		{
 			"backtrace" : 2,
 			"id" : "gtest_main::@03b4549fe4063facc5e2"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "hellow_Lib::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "test_version::@6890427a1f51a3e7e1df",

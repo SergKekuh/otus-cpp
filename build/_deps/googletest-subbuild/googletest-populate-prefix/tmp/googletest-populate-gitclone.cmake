@@ -41,12 +41,12 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "release-1.11.0" --
+          checkout "release-1.12.0" --
   WORKING_DIRECTORY "/home/serg/Documents/otus-cpp/build/_deps/googletest-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'release-1.11.0'")
+  message(FATAL_ERROR "Failed to checkout tag: 'release-1.12.0'")
 endif()
 
 set(init_submodules TRUE)

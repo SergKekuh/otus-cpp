@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.28.1)
+
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
@@ -9,9 +10,11 @@ project(helloworld VERSION ${PROJECT_VESRION})
 include(FetchContent)
 FetchContent_Declare(googletest
   GIT_REPOSITORY https://github.com/google/googletest
-  GIT_TAG release-1.11.0
+  GIT_TAG release-1.12.0
 )
 FetchContent_GetProperties(googletest)
+
+
 
 # googletest_POPULATED
 # googletest_SOURCE_DIR

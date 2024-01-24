@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_main.a"
+			"path" : "lib/libgmock_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -22,7 +22,7 @@
 		"files" : 
 		[
 			"build/_deps/googletest-src/googletest/cmake/internal_utils.cmake",
-			"build/_deps/googletest-src/googletest/CMakeLists.txt"
+			"build/_deps/googletest-src/googlemock/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -32,13 +32,13 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 133,
+				"line" : 100,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 209,
+				"line" : 205,
 				"parent" : 1
 			},
 			{
@@ -50,25 +50,25 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 151,
+				"line" : 120,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 318,
+				"line" : 316,
 				"parent" : 4
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 146,
+				"line" : 101,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 121,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -79,11 +79,21 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
+					"fragment" : "-Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
 				}
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/home/serg/Documents/otus-cpp/build/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/home/serg/Documents/otus-cpp/build/_deps/googletest-src/googlemock"
+				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
@@ -106,10 +116,14 @@
 	[
 		{
 			"backtrace" : 6,
+			"id" : "gmock::@eedd0be5a0d53e750fb6"
+		},
+		{
+			"backtrace" : 6,
 			"id" : "gtest::@03b4549fe4063facc5e2"
 		}
 	],
-	"id" : "gtest_main::@03b4549fe4063facc5e2",
+	"id" : "gmock_main::@eedd0be5a0d53e750fb6",
 	"install" : 
 	{
 		"destinations" : 
@@ -124,12 +138,12 @@
 			"path" : "/usr/local"
 		}
 	},
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_main.a",
+	"name" : "gmock_main",
+	"nameOnDisk" : "libgmock_main.a",
 	"paths" : 
 	{
-		"build" : "build/_deps/googletest-src/googletest",
-		"source" : "build/_deps/googletest-src/googletest"
+		"build" : "build/_deps/googletest-src/googlemock",
+		"source" : "build/_deps/googletest-src/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -146,7 +160,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "build/_deps/googletest-src/googletest/src/gtest_main.cc",
+			"path" : "build/_deps/googletest-src/googlemock/src/gmock_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],
