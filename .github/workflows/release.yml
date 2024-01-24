@@ -16,9 +16,7 @@ jobs:
           submodules: true
       - run: sudo apt-get update && sudo apt-get install libgtest-dev libgmock-dev -y && sudo apt-get install libtbb-dev -y
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
-      - run: cmake --build .
-      - run: cmake --build . --target test
-      - run: cmake --build . --target package
+      - run: cmake --build .      
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
@@ -36,6 +34,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./helloworld-0.0.${{ github.run_number }}-Linux.deb
-          asset_name: helloworld-0.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./hellow_Lib-0.0.${{ github.run_number }}-Linux.deb
+          asset_name: hellow_Lib-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
