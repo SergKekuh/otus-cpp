@@ -22,7 +22,7 @@ FetchContent_GetProperties(googletest)
 
 if(NOT googletest_POPULATED)
   FetchContent_Populate(googletest)
-  add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BUILD_DIR})
+  add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BUILD_DIR} EXCLUDE_FROM_ALL)
 endif()
 
 configure_file(version.h.in version.h)

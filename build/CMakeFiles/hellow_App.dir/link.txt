@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/hellow_App.dir/main.cpp.o -o hellow_App  libhellow_Lib.a 
