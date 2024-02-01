@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@googletest-branch
         with:
           submodules: true
       - run: sudo apt-get update && sudo apt-get install libgtest-dev libgmock-dev -y && sudo apt-get install libtbb-dev -y
